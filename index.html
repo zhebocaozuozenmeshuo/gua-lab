@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gua-page-calendar</title>
+</head>
+<body>
+    <div class="page">
+        <a href="./demos/tabs.html">Tab组件</a>
+    </div>
+    <div class="calendarWrapper">
+        <button id="show">显示</button>
+        <button id="hide">隐藏</button>
+        <div id="c" class="cal">这是一个日历</div>
+    </div>
+    <script>
+        (function() {
+            function Calendar(id) {
+                this.config = {
+                    mode: '',
+                    lang: 'zh-CN',
+                    debug: false
+                }
+                this._container = null
+                this._errorTip = ''
+                this._init(id)
+            }
+            function G(element) {
+                if (typeof element === 'string') {
+                    console.log(G.elementCache[element] || ( G.elementCache[element] = document.getElementById(element)))
+                    return G.elementCache[element] || ( G.elementCache[element] = document.getElementById(element))
+                } else if (condition) {
+                    
+                } else {
+                    
+                }
+            }
+            Calendar.prototype._init = function(id) {
+                this._container = G(id)
+            }
+        })()
+    </script>
+     <script>
+            let c = new Calendar('c')
+            c.hide()
+            c.show()
+        </script>
+</body>
+</html>
