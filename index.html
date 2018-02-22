@@ -16,7 +16,12 @@
         <div id="c" class="cal">这是一个日历</div>
     </div>
     <script>
+    </script>
+    <script>
         (function() {
+            const log = function() {
+              console.log.apply(console, arguments)
+            }
             function Calendar(id) {
                 this.config = {
                     mode: '',
@@ -32,9 +37,9 @@
                     console.log(G.elementCache[element] || ( G.elementCache[element] = document.getElementById(element)))
                     return G.elementCache[element] || ( G.elementCache[element] = document.getElementById(element))
                 } else if (condition) {
-                    
+
                 } else {
-                    
+
                 }
             }
             Calendar.prototype._init = function(id) {
@@ -42,10 +47,11 @@
             }
         })()
     </script>
-     <script>
-            let c = new Calendar('c')
-            c.hide()
-            c.show()
-        </script>
+    <script>
+      // let c = new Calendar('c')
+      // c.hide()
+      // c.show()
+    </script>
+
 </body>
 </html>
